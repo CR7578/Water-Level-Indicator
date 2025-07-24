@@ -32,6 +32,7 @@ A robust, feature-rich IoT project for monitoring water tank levels and controll
 ---
 
 
+
 ## Hardware Requirements
 
 - ESP32 Development Board
@@ -43,7 +44,15 @@ A robust, feature-rich IoT project for monitoring water tank levels and controll
 - Wires, Resistors, Power Supply, etc.
 
 
-### Pin Mapping (default)
+
+> **Note:**
+> 
+> After wiring, you must adjust the following parameters in `Water_Level_Indicator.ino` to match your tank and sensor:
+> - `water_tank_depth`: Set this to the depth of your water tank (in cm, measured from the sensor to the bottom when empty).
+> - `min_distance`: Set this to the minimum distance your ultrasonic sensor reads when the tank is full (in cm).
+> - `full_water`: Set this to your tank's full capacity in liters.
+> 
+> These values are critical for accurate water level calculation. Use your own measurements and sensor readings for best results.
 
 | Component         | ESP32 Pin |
 |-------------------|-----------|
