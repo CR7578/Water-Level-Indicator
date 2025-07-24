@@ -1,10 +1,16 @@
+
 # IoT Water Level Indicator & Motor Controller with Telegram Bot
+
 
 A robust, feature-rich IoT project for monitoring water tank levels and controlling a water pump motor using an ESP32, ultrasonic sensor, LCD, LEDs, and Telegram Bot integration. Designed for reliability, remote access, and user management.
 
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+
 ---
 
+
 ## Features
+
 
 - **Real-Time Water Level Monitoring:**
   - Uses an ultrasonic sensor for accurate tank level measurement with noise filtering.
@@ -25,6 +31,7 @@ A robust, feature-rich IoT project for monitoring water tank levels and controll
 
 ---
 
+
 ## Hardware Requirements
 
 - ESP32 Development Board
@@ -34,6 +41,7 @@ A robust, feature-rich IoT project for monitoring water tank levels and controll
 - 6x LEDs (different colors recommended)
 - Physical ON/OFF Switch
 - Wires, Resistors, Power Supply, etc.
+
 
 ### Pin Mapping (default)
 
@@ -51,13 +59,16 @@ A robust, feature-rich IoT project for monitoring water tank levels and controll
 
 ---
 
+
 ## Getting Started
+
 
 1. **Clone the Repository**
 
    ```sh
    git clone https://github.com/yourusername/water-level-indicator.git
    ```
+
 
 2. **Configure WiFi and Telegram**
 
@@ -73,6 +84,7 @@ A robust, feature-rich IoT project for monitoring water tank levels and controll
    - Get your Telegram Bot Token from [@BotFather](https://t.me/BotFather).
    - To find your Chat ID, message your bot `/my_id` and check the serial monitor.
 
+
 3. **Install Required Libraries**
 
    - WiFi.h, WiFiClientSecure.h (ESP32 core)
@@ -83,6 +95,7 @@ A robust, feature-rich IoT project for monitoring water tank levels and controll
 
    Install via Arduino Library Manager or PlatformIO.
 
+
 4. **Upload the Code**
 
    - Open `Water_Level_Indicator.ino` in Arduino IDE or VS Code with PlatformIO.
@@ -90,6 +103,7 @@ A robust, feature-rich IoT project for monitoring water tank levels and controll
    - Upload the code.
 
 ---
+
 
 ## Telegram Bot Commands
 
@@ -106,6 +120,7 @@ A robust, feature-rich IoT project for monitoring water tank levels and controll
 
 ---
 
+
 ## System Logic
 
 - **Automatic Motor Control:**
@@ -121,6 +136,7 @@ A robust, feature-rich IoT project for monitoring water tank levels and controll
 
 ---
 
+
 ## Troubleshooting
 
 - **WiFi Issues:**
@@ -133,17 +149,20 @@ A robust, feature-rich IoT project for monitoring water tank levels and controll
 
 ---
 
+
 ## License
 
-This project is open-source and available under the MIT License.
+This project is open-source and available under the [MIT License](LICENSE).
 
 ---
+
 
 ## Author
 
-- [Your Name](https://github.com/yourusername)
+- **CHETHAN N** ([CR7578](https://github.com/CR7578))
 
 ---
+
 
 ## Acknowledgements
 
