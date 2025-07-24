@@ -1,6 +1,48 @@
 
 # IoT Water Level Indicator & Motor Controller with Telegram Bot
 
+---
+
+## Important Instructions
+
+- **Update WiFi and Telegram Credentials:**
+  - In `Water_Level_Indicator.ino`, replace `WIFI_SSID`, `WIFI_PASSWORD`, `BOT_TOKEN`, and `ADMIN_CHAT_ID` with your actual WiFi and Telegram details before uploading.
+
+- **Install All Required Libraries:**
+  - Ensure the following libraries are installed via Arduino Library Manager or PlatformIO:
+    - WiFi.h, WiFiClientSecure.h, UniversalTelegramBot, ArduinoJson, LiquidCrystal_I2C, Preferences.h
+
+- **Set Correct Board and Port:**
+  - In Arduino IDE or PlatformIO, select the correct ESP32 board and COM port before uploading.
+
+- **Adjust Tank and Sensor Parameters:**
+  - Set `water_tank_depth`, `min_distance`, and `full_water` in the code to match your tank and sensor for accurate readings.
+
+- **Wiring and Pin Mapping:**
+  - Double-check all wiring according to the pin mapping table. Incorrect wiring may damage components or cause malfunction.
+
+- **Telegram Bot Setup:**
+  - Create a Telegram bot using [@BotFather](https://t.me/BotFather) and get your bot token.
+  - Use `/my_id` command to get your chat ID for admin setup.
+
+- **First Boot and NVS:**
+  - On first boot, the admin chat ID is automatically added to the allowed list.
+  - All allowed users and motor state are saved in ESP32’s NVS (non-volatile storage).
+
+- **Physical Switch Priority:**
+  - The physical ON/OFF switch always has the highest priority for motor control.
+
+- **Serial Monitor for Debugging:**
+  - Open the Serial Monitor at 9600 baud to view debug messages and troubleshoot issues.
+
+- **Reboot Logic:**
+  - The ESP32 will automatically reboot every 15 minutes for reliability.
+
+- **Sensor Placement:**
+  - Mount the ultrasonic sensor at the top of the tank, facing down, for best results.
+
+---
+
 
 A robust, feature-rich IoT project for monitoring water tank levels and controlling a water pump motor using an ESP32, ultrasonic sensor, LCD, LEDs, and Telegram Bot integration. Designed for reliability, remote access, and user management.
 
